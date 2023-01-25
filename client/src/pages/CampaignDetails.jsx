@@ -11,6 +11,8 @@ const CampaignDetails = () => {
   const { state } = useLocation();
   // console.log(state);
 
+  // test comment
+
   const navigate = useNavigate();
 
   const { donate, getDonations, contract, address } = useStateContext();

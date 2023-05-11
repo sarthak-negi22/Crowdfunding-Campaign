@@ -1,6 +1,11 @@
-import { createCampaign, dashboard, logout, payment, profile, withdraw } from '../assets';
+import { createCampaign, dashboard, logout, payment, profile, withdraw, logo } from '../assets';
 
 export const navlinks = [
+  {
+    name: 'landingpage',
+    imgUrl: logo,
+    link: '/landing-page',
+  },
   {
     name: 'dashboard',
     imgUrl: dashboard,
@@ -14,14 +19,14 @@ export const navlinks = [
   {
     name: 'payment',
     imgUrl: payment,
-    link: '/',
-    disabled: true,
+    link: '/send-complaints',
+    // disabled: true,
   },
   {
     name: 'withdraw',
     imgUrl: withdraw,
-    link: '/',
-    disabled: true,
+    link: '/about-us',
+    // disabled: true,
   },
   {
     name: 'profile',
@@ -31,7 +36,7 @@ export const navlinks = [
   {
     name: 'logout',
     imgUrl: logout,
-    link: '/',
-    disabled: true,
+    link: '/logout',
+    // disabled: true,
   },
 ];

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { CampaignDetails, CreateCampaign, Home, Profile } from './pages'
+import { CampaignDetails, CreateCampaign, Home, Profile, SendComplaints, AboutUs, Logout, LandingPage } from './pages'
 import { Sidebar, Navbar } from './components'
 
 const App = () => {
@@ -14,10 +14,14 @@ const App = () => {
         <Navbar/>
 
           <Routes>
+            <Route path="/landing-page" element={<LandingPage/>}/>
             <Route path="/" element={<Home/>} />
             <Route path="/profile" element={<Profile/>}/> 
             <Route path="/create-campaign" element={<CreateCampaign/>}/>
             <Route path="/campaign-details/:id" element={<CampaignDetails/>}/>
+            <Route path="/send-complaints" element={<SendComplaints/>}/>
+            <Route path="/about-us" element={<AboutUs/>}/>
+            <Route path="/logout" element={<Logout/>} />
           </Routes>
 
       </div>

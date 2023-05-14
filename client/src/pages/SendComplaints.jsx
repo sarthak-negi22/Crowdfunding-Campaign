@@ -17,6 +17,7 @@ const SendComplaints = () => {
 
     e.preventDefault();
     setIsLoading(true);
+    console.log('feedback received:',form);
     navigate('/');
  
   }

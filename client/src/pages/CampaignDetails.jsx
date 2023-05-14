@@ -35,13 +35,18 @@ const CampaignDetails = () => {
 
   const handleDonate = async () => {
 
+    if(remainingDays > 0) {
+
     setIsLoading(true);
 
     await donate(state.pId, amount);
 
     navigate('/');
 
-    setIsLoading(false);
+    setIsLoading(false); 
+    } else {
+      alert("You can't donate to this campagin anymore!")
+    }
 
   }
 

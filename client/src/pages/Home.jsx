@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useStateContext } from '../context';
 import { DisplayCampaigns } from '../components';
- 
+import { daysLeft } from '../utils';
 
 const Home = () => {
 
@@ -22,12 +22,14 @@ const Home = () => {
   }, [address, contract])
 
   return (
+
     <DisplayCampaigns
-      title= "All Campaigns"
+      title= "Active Campaigns"
       isLoading= {isLoading}
       campaigns= {campaigns}
 
     />
+
   )
 }
 

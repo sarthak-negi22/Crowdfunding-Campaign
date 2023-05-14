@@ -14,6 +14,7 @@ import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
 import email from './email.svg';
 import phone from './phone.png';
+import crowdfund from './crowdfund.png'
 
 export {
   tagType,
@@ -32,4 +33,5 @@ export {
   thirdweb,
   email,
   phone,
+  crowdfund,
 };

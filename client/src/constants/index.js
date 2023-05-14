@@ -33,10 +33,5 @@ export const navlinks = [
     link: '/about-us',
     // disabled: true,
   },
-  {
-    name: 'logout',
-    imgUrl: logout,
-    link: '/logout',
-    // disabled: true,
-  },
+
 ];

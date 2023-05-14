@@ -11,5 +11,8 @@
   "dependencies": {
     "@thirdweb-dev/contracts": "^3",
     "dotenv": "^16.0.3"
+  },
+  "resolutions": {
+    "ethereumjs-abi": "https://registry.npmjs.org/ethereumjs-abi/-/ethereumjs-abi-0.6.8.tgz"
   }
 }
